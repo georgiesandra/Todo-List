@@ -1,10 +1,11 @@
-#Conception architecturale d'une application de gestion de taches
-##1. Introduction
+# Conception architecturale d'une application de gestion de taches
+
+## 1. **Introduction**
 
 Notre projet consiste a concevoir une application de gestion de taches nommée Taskflow qui permettra à utilisateur d'organiser et de suivre ses taches quotidiennes.L'utilisateur pourra etre capable de créer , supprimer, ajouter, modifier , filtrer, rechercher, se connecter tout en gerant les priorités, les statuts et les notifications de ses différentes taches.
 
 
-## 2.Objectifs
+## 2.**Objectifs**
 
 -Appliquer le principe d'architecture en couche
 -Définir les API REST sécurisée
@@ -13,7 +14,7 @@ Notre projet consiste a concevoir une application de gestion de taches nommée T
 -Gestion de l'authentification de la sécuritée
 
 
-## 3.Besoin fonctionnels
+## 3.**Besoin fonctionnels**
   
   ### Authentification 
 -Création d'un compte pour accèder à l'application
@@ -37,7 +38,7 @@ Notre projet consiste a concevoir une application de gestion de taches nommée T
 
 
 
-## 4.Besoin non-fonctionnels
+## 4.**Besoin non-fonctionnels**
 
 -Gestion de la performance et la réactivité
 -Gestion de la disponibilité
@@ -49,7 +50,7 @@ Notre projet consiste a concevoir une application de gestion de taches nommée T
 
 
 
-## 5.Contrainte techniques
+## 5.**Contrainte techniques**
 
 -Avoir une architecture 3 tiers
 -Respecter un modelèle client/Serveur
@@ -62,7 +63,7 @@ Notre projet consiste a concevoir une application de gestion de taches nommée T
 -Gestion de l'architecture Client-Serveur 
 
 
-## 6.Choix de la Stack techniques
+## 6.**Choix de la Stack techniques**
 
 Stack Python:
 -Front-end: React.js
@@ -72,7 +73,7 @@ Stack Python:
 -Communication:API REST
 -Versioning: Git
 
-## 7.Diagramme architectural 
+## 7.**Diagramme architectural** 
 
 Les différentes couches de notre diagramme:
 
@@ -83,7 +84,7 @@ Les différentes couches de notre diagramme:
 -Base de données: Modèlisation de données, repositories, base de données relationnelle
    
 
-## 8.Responsabilités de chaque composants
+## 8.**Responsabilités de chaque composants**
 
 POur le frontend
 
@@ -116,7 +117,7 @@ Pour la base de données
 -Sauvegarde et récupération des données
 
 
-## 9. Modélisation des données
+## 9.**Modélisation des données**
 
 Table: Users
 
@@ -139,23 +140,23 @@ Table: Tasks
 |Status       |Boolean     |Terminé ou non               |
 |CReated_at    |DATE        |Date de création automatique |
 
-## 10. Endpoints de l'API
+## 10.**Endpoints de l'API**
 
-|CRUD    | Méthode   | URL     | Action              |
-|----------------------------------------------------|
-|-       | POST      | /auth/register| Créer un compte|
-|-       | POST      | /auth/login   | Se connecter
-|-       | POST      | /auth/logout  | Se déconnecter
-|CReate  | POST      | /tasks        | Créer une tache
-|Read    | GET       | /tasks        | Lire toutes les taches
-|Read    | GET       | /tasks/:id    | Lire une tache
-|Read    | GET       | /tasks?status=| Filtrer par statut
-|Read    | GET       | /tasks?search=| Rechercher par mot-clé
-|Update  | PUT       | /tasks/:id    | Modifier une tache
-|Delete  |DELETE     | /tasks/:id    | Supprimer une tache
+|CRUD    | Méthode   | URL     | Action                       |
+|-------------------------------------------------------------|
+|-       | POST      | /auth/register| Créer un compte        |
+|-       | POST      | /auth/login   | Se connecter           |
+|-       | POST      | /auth/logout  | Se déconnecter         |
+|CReate  | POST      | /tasks        | Créer une tache        |
+|Read    | GET       | /tasks        | Lire toutes les taches |
+|Read    | GET       | /tasks/:id    | Lire une tache         |
+|Read    | GET       | /tasks?status=| Filtrer par statut     |
+|Read    | GET       | /tasks?search=| Rechercher par mot-clé |
+|Update  | PUT       | /tasks/:id    | Modifier une tache     |
+|Delete  |DELETE     | /tasks/:id    | Supprimer une tache    |
 
 
-## 11. Flux des données
+## 11.**Flux des données**
 
 L’utilisateur interagit avec l’interface | v
 Le front-end envoie une requête HTTP | v L’API traite la requête | v
@@ -164,7 +165,7 @@ Une réponse JSON est retournée | v
 L’interface est mise à jour
 
 
-## 12. Structure du projet
+## 12.**Structure du projet**
 
 Voici un schéma logique démonstractif :
 
@@ -204,7 +205,7 @@ Explication
 - config/ : contient la configuration de la base de données.
 
 
-## 13. Conclusion
+## 13.**Conclusion**
 
 Ce projet nous permettra de concevoir, de developper et de maintenir des applications complétes front-end / back-end , sécuritées, performance et l'évolution en s'appuyant sur une architure cohérente.
 

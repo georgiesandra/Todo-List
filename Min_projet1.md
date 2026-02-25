@@ -66,12 +66,15 @@ Notre projet consiste a concevoir une application de gestion de taches nommée T
 ## 6.**Choix de la Stack techniques**
 
 Stack Python:
--Front-end: React.js
--Back-end: Node.js
--Base de données: MongoDB
--Authentification: JWT
--Communication:API REST
--Versioning: Git
+
+|Couche           |Technologie  |
+|-------------------------------|
+|Front-end        |React.js     |
+|Back-end         |Node.js      |
+|Base de données  |MongoDB      |
+|Authentification |JWT          |
+|Communication    |API REST     |
+|Versioning       |Git          |
 
 ## 7.**Diagramme architectural** 
 
@@ -121,28 +124,28 @@ Pour la base de données
 
 Table: Users
 
-|Champ     |Type        |Description             |
+|Champ          |Type        |Description        |
 |------------------------------------------------|
-|Id        |INT         |Identifiant Unique      |
-|Email     |VARCHAR     |Email Unique            |
-|Password_hash    |VARCHAR    |Mot de passe haché|
-|Create_at    |DATE     |Date de création        |
+|Id             |INT         |Identifiant Unique |
+|Email          |VARCHAR     |Email Unique       |
+|Password_hash  |VARCHAR     |Mot de passe haché |
+|Create_at      |DATE        |Date de création   |
 
 Table: Tasks
 
 |Champ        |Type        |Description                  |
-|--------------------------------------------            |
+|--------------------------------------------------------|
 |Id           |INT         |Identifiant Unique           |
 |User_id      |INT (FK)    |Réference à l'utilisateur    |
 |Title        |VARCHAR     |Titre de la tache            |
 |Description  |TEXT        |Description                  |
 |Priority     |Enum        |Low/medium/high              |
 |Status       |Boolean     |Terminé ou non               |
-|CReated_at    |DATE        |Date de création automatique |
+|CReated_at   |DATE        |Date de création automatique |
 
 ## 10.**Endpoints de l'API**
 
-|CRUD    | Méthode   | URL     | Action                       |
+|CRUD    | Méthode   | URL           | Action                 |
 |-------------------------------------------------------------|
 |-       | POST      | /auth/register| Créer un compte        |
 |-       | POST      | /auth/login   | Se connecter           |

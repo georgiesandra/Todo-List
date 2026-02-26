@@ -210,7 +210,7 @@ Explication
 
 ## 13.**Conclusion**
 
-Ce projet nous permettra de concevoir, de developper et de maintenir des applications complétes front-end / back-end , sécuritées, performance et l'évolution en s'appuyant sur une architure cohérente.
+Ce projet nous permettra de concevoir, de developper et de maintenir des applications complétes front-end / back-end , sécuritées, performance et l'évolution en s'appuyant sur une architure cohérente.De ce fait, ce cahier des charges définira les fonctionnalitées essentielles pour garantir une gestion de tâches fluide et intuitive. Cependant, ce document servira de guide de référence tout au long du développement pour s'assurer que l'application finale réponde parfaitement aux besoins d'organisation et de productivité identifiés.
 
 
 

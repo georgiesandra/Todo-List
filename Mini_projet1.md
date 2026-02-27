@@ -68,7 +68,7 @@ Notre projet consiste a concevoir une application de gestion de taches nommée T
 Stack Python:
 
 |Couche           |Technologie  |
-|-------------------------------|
+|-----------------|-------------|
 |Front-end        |React.js     |
 |Back-end         |Node.js      |
 |Base de données  |MongoDB      |
@@ -125,7 +125,7 @@ Pour la base de données
 Table: Users
 
 |Champ          |Type        |Description        |
-|------------------------------------------------|
+|---------------|------------|-------------------|
 |Id             |INT         |Identifiant Unique |
 |Email          |VARCHAR     |Email Unique       |
 |Password_hash  |VARCHAR     |Mot de passe haché |
@@ -134,7 +134,7 @@ Table: Users
 Table: Tasks
 
 |Champ        |Type        |Description                  |
-|--------------------------------------------------------|
+|-------------|------------|-----------------------------|
 |Id           |INT         |Identifiant Unique           |
 |User_id      |INT (FK)    |Réference à l'utilisateur    |
 |Title        |VARCHAR     |Titre de la tache            |
@@ -146,7 +146,7 @@ Table: Tasks
 ## 10.**Endpoints de l'API**
 
 |CRUD    | Méthode   | URL           | Action                 |
-|-------------------------------------------------------------|
+|--------|-----------|---------------|------------------------|
 |-       | POST      | /auth/register| Créer un compte        |
 |-       | POST      | /auth/login   | Se connecter           |
 |-       | POST      | /auth/logout  | Se déconnecter         |
